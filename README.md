@@ -1,16 +1,50 @@
-# React + Vite
+# QuickNotes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly polished, minimalist personal note-taking app built for speed. Open it, type a thought, press **Enter** — it's saved. No friction, no clutter.
 
-Currently, two official plugins are available:
+Built with **React**, **Vite**, and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **⚡ Instant capture** — Always-ready input at the top; press `Enter` to save any note immediately
+- **📝 Markdown support** — Write with `**bold**`, `- bullet lists`, `` `code` ``, blockquotes, and more (powered by `react-markdown`)
+- **📌 Pin to top** — Pin any note so it always appears above the date-grouped list, regardless of when it was created
+- **📅 Date grouping** — Notes are automatically grouped by day under clear section headers (`Today`, `Yesterday`, or a full date)
+- **💾 Persistent storage** — All notes (including pinned state) are saved to the browser's `localStorage` and survive page refreshes
+- **🔍 Live search** — Filter notes instantly as you type
+- **✏️ Inline editing** — Edit any note in place; press `Enter` to save or `Escape` to cancel
+- **🗑️ Safe delete** — Two-step delete confirmation prevents accidental data loss
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+**Prerequisites:** Node.js 18+ and npm.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/jritvane/quicknotes-app.git
+cd quicknotes-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| [React](https://react.dev) | UI components and state |
+| [Vite](https://vitejs.dev) | Dev server and bundler |
+| [Tailwind CSS v4](https://tailwindcss.com) | Utility-first styling |
+| [react-markdown](https://github.com/remarkjs/react-markdown) | Markdown rendering |
+| [remark-gfm](https://github.com/remarkjs/remark-gfm) | GitHub Flavored Markdown (tables, task lists, strikethrough) |
