@@ -85,8 +85,8 @@ export default function NoteCard({ note, onDelete, onUpdate, onTogglePin, isLast
                 </span>
             </div>
 
-            {/* Action buttons — revealed on group hover */}
-            <div className="flex-shrink-0 flex items-center gap-0.5 pt-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+            {/* Action buttons — always visible on mobile, revealed on hover on desktop */}
+            <div className="flex-shrink-0 flex items-center gap-0.5 pt-0.5 opacity-50 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-150">
                 {/* Pin */}
                 <button
                     onClick={() => onTogglePin(note.id)}
